@@ -1,0 +1,38 @@
+{
+  "name": "fintech-broker-skillsets",
+  "version": "1.0.0",
+  "description": "Claude Code plugin for tracking Indian stock broker API documentation changes, deprecations, and codebase coverage",
+  "bin": {
+    "fintech-skillsets": "./install.sh"
+  },
+  "scripts": {
+    "install-skills": "./install.sh",
+    "postinstall": "echo 'Run: npx fintech-skillsets /path/to/your/project'"
+  },
+  "keywords": [
+    "fintech",
+    "indian-stock-market",
+    "broker-api",
+    "zerodha",
+    "upstox",
+    "angelone",
+    "dhan",
+    "fyers",
+    "claude-code",
+    "claude-skills",
+    "api-documentation",
+    "deprecation-tracker"
+  ],
+  "files": [
+    "broker-registry.json",
+    "install.sh",
+    "CLAUDE.md",
+    ".claude/commands/*.md"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

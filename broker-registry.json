@@ -1,0 +1,604 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-04-07",
+  "categories": {
+    "discount": {
+      "label": "Major Discount Brokers",
+      "brokers": {
+        "zerodha": {
+          "name": "Zerodha",
+          "api_name": "Kite Connect",
+          "docs_url": "https://kite.trade/docs/connect/v3/",
+          "access_model": "paid",
+          "websocket": true,
+          "sdk_languages": ["python", "java", "php", "go", "node"],
+          "xts_based": false,
+          "notes": "Most popular, extensive docs"
+        },
+        "upstox": {
+          "name": "Upstox",
+          "api_name": "Upstox API",
+          "docs_url": "https://upstox.com/developer/api-documentation/",
+          "access_model": "paid",
+          "websocket": true,
+          "sdk_languages": ["python", "java", "node"],
+          "xts_based": false,
+          "notes": ""
+        },
+        "angelone": {
+          "name": "Angel One",
+          "api_name": "SmartAPI",
+          "docs_url": "https://smartapi.angelbroking.com/docs",
+          "access_model": "free",
+          "websocket": true,
+          "sdk_languages": ["python", "java", "node"],
+          "xts_based": false,
+          "notes": "Docs URL has changed multiple times"
+        },
+        "dhan": {
+          "name": "Dhan",
+          "api_name": "DhanHQ",
+          "docs_url": "https://dhanhq.co/docs/v2/",
+          "access_model": "free",
+          "websocket": true,
+          "sdk_languages": ["python", "java", "node", "go"],
+          "xts_based": false,
+          "notes": ""
+        },
+        "fyers": {
+          "name": "Fyers",
+          "api_name": "Fyers API v3",
+          "docs_url": "https://myapi.fyers.in/docsv3",
+          "access_model": "free",
+          "websocket": true,
+          "sdk_languages": ["python"],
+          "xts_based": false,
+          "notes": ""
+        },
+        "5paisa": {
+          "name": "5paisa",
+          "api_name": "5paisa API",
+          "docs_url": "https://www.5paisa.com/developerapi/overview",
+          "access_model": "paid",
+          "websocket": true,
+          "sdk_languages": ["python", "dotnet"],
+          "xts_based": false,
+          "notes": ""
+        },
+        "groww": {
+          "name": "Groww",
+          "api_name": "Groww Trade API",
+          "docs_url": "https://groww.in/trade-api/docs",
+          "access_model": "paid",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "Relatively new API offering"
+        },
+        "paytm_money": {
+          "name": "Paytm Money",
+          "api_name": "Paytm Money API",
+          "docs_url": "https://developer.paytmmoney.com/docs/api/",
+          "access_model": "paid",
+          "websocket": true,
+          "sdk_languages": ["python"],
+          "xts_based": false,
+          "notes": ""
+        },
+        "samco": {
+          "name": "Samco",
+          "api_name": "StocknoteAPI",
+          "docs_url": "https://developers.stocknote.com/api/",
+          "access_model": "paid",
+          "websocket": true,
+          "sdk_languages": ["python", "java"],
+          "xts_based": false,
+          "notes": ""
+        },
+        "mstock": {
+          "name": "mStock",
+          "api_name": "mStock Trading API",
+          "docs_url": "https://tradingapi.mstock.com/docs/v1/",
+          "access_model": "paid",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "By Mirae Asset"
+        }
+      }
+    },
+    "full_service": {
+      "label": "Full-Service Brokers",
+      "brokers": {
+        "kotak": {
+          "name": "Kotak Securities",
+          "api_name": "Neo Trade API",
+          "docs_url": "https://www.kotaksecurities.com/trade-api/",
+          "access_model": "free",
+          "websocket": true,
+          "sdk_languages": ["python"],
+          "xts_based": false,
+          "notes": ""
+        },
+        "icici_direct": {
+          "name": "ICICI Direct",
+          "api_name": "Breeze API",
+          "docs_url": "https://api.icicidirect.com/breezeapi/documents/index.html",
+          "access_model": "paid",
+          "websocket": true,
+          "sdk_languages": ["python"],
+          "xts_based": false,
+          "notes": ""
+        },
+        "hdfc_sec": {
+          "name": "HDFC Securities",
+          "api_name": "InvestRight API",
+          "docs_url": "https://developer.hdfcsec.com/",
+          "access_model": "paid",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": ""
+        },
+        "motilal_oswal": {
+          "name": "Motilal Oswal",
+          "api_name": "MO API",
+          "docs_url": "https://invest.motilaloswal.com/moAPI/APIDocumentation/Introduction",
+          "access_model": "on_request",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "Docs behind login typically"
+        },
+        "iifl": {
+          "name": "IIFL Securities",
+          "api_name": "XTS API",
+          "docs_url": "https://ttblaze.iifl.com/doc/interactive/",
+          "access_model": "on_request",
+          "websocket": true,
+          "sdk_languages": ["python", "dotnet"],
+          "xts_based": true,
+          "notes": "Symphony XTS based"
+        },
+        "sharekhan": {
+          "name": "Sharekhan",
+          "api_name": "TradeTiger API",
+          "docs_url": "https://newtrade.sharekhan.com/skweb/trading-api",
+          "access_model": "on_request",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": ""
+        },
+        "nuvama": {
+          "name": "Nuvama",
+          "api_name": "Nuvama API",
+          "docs_url": "https://www.nuvamawealth.com/api-documentation",
+          "access_model": "on_request",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": true,
+          "notes": "Formerly Edelweiss, XTS-based"
+        },
+        "anand_rathi": {
+          "name": "Anand Rathi",
+          "api_name": "Anand Rathi API",
+          "docs_url": "https://www.rathionline.com/",
+          "access_model": "on_request",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "API access on request"
+        },
+        "religare": {
+          "name": "Religare Broking",
+          "api_name": "Religare API",
+          "docs_url": "https://www.religareonline.com/",
+          "access_model": "on_request",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "API on request"
+        },
+        "geojit": {
+          "name": "Geojit",
+          "api_name": "Geojit API",
+          "docs_url": "https://www.geojit.com/",
+          "access_model": "on_request",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "API on request"
+        }
+      }
+    },
+    "tech_forward": {
+      "label": "Tech-Forward & Algo-Friendly Brokers",
+      "brokers": {
+        "finvasia": {
+          "name": "Finvasia",
+          "api_name": "Shoonya",
+          "docs_url": "https://prism.finvasia.com/api-docs",
+          "access_model": "free",
+          "websocket": true,
+          "sdk_languages": ["python"],
+          "xts_based": false,
+          "notes": ""
+        },
+        "flattrade": {
+          "name": "Flattrade",
+          "api_name": "Flattrade Kosh",
+          "docs_url": "https://flattrade.in/kosh/",
+          "access_model": "free",
+          "websocket": true,
+          "sdk_languages": ["python"],
+          "xts_based": false,
+          "notes": ""
+        },
+        "aliceblue": {
+          "name": "AliceBlue",
+          "api_name": "Ant API v2",
+          "docs_url": "https://v2api.aliceblueonline.com/introduction",
+          "access_model": "free",
+          "websocket": true,
+          "sdk_languages": ["python"],
+          "xts_based": false,
+          "notes": ""
+        },
+        "tradejini": {
+          "name": "Tradejini",
+          "api_name": "Tradejini API",
+          "docs_url": "https://www.tradejini.com/",
+          "access_model": "on_request",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": true,
+          "notes": "Symphony XTS-based"
+        },
+        "master_trust": {
+          "name": "Master Trust",
+          "api_name": "MasterSwift",
+          "docs_url": "https://masterswift.mastertrust.co.in/",
+          "access_model": "on_request",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "API on request"
+        },
+        "sas_online": {
+          "name": "SAS Online",
+          "api_name": "SAS API",
+          "docs_url": "https://www.sasonline.in/",
+          "access_model": "on_request",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "API on request"
+        },
+        "zebu": {
+          "name": "Zebu Trade",
+          "api_name": "Zebu API",
+          "docs_url": "https://www.zebuetrade.com/",
+          "access_model": "on_request",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": true,
+          "notes": "Symphony XTS-based"
+        },
+        "profitmart": {
+          "name": "Profitmart",
+          "api_name": "Profitmart API",
+          "docs_url": "https://profitmart.in/",
+          "access_model": "on_request",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "API on request"
+        },
+        "goodwill": {
+          "name": "Goodwill (GWC)",
+          "api_name": "GWC API",
+          "docs_url": "https://www.gwcindia.in/api",
+          "access_model": "on_request",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": ""
+        },
+        "choice": {
+          "name": "Choice Broking",
+          "api_name": "Jiffy",
+          "docs_url": "https://www.choiceindia.com/",
+          "access_model": "on_request",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "API on request"
+        },
+        "bigul": {
+          "name": "Bigul",
+          "api_name": "Bigul API",
+          "docs_url": "https://bigul.co/",
+          "access_model": "on_request",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": true,
+          "notes": "By Bonanza, XTS-based"
+        },
+        "composite_edge": {
+          "name": "Composite Edge",
+          "api_name": "Composite Edge API",
+          "docs_url": "https://www.compositedge.com/",
+          "access_model": "on_request",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": true,
+          "notes": "XTS-based"
+        },
+        "definedge": {
+          "name": "Definedge Securities",
+          "api_name": "Definedge API",
+          "docs_url": "https://www.definedgesecurities.com/",
+          "access_model": "on_request",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": ""
+        },
+        "firstock": {
+          "name": "Firstock",
+          "api_name": "Firstock API",
+          "docs_url": "https://thefirstock.com/api-documentation",
+          "access_model": "free",
+          "websocket": true,
+          "sdk_languages": ["python"],
+          "xts_based": false,
+          "notes": "By Thefirstock"
+        },
+        "pocketful": {
+          "name": "Pocketful",
+          "api_name": "Pocketful API",
+          "docs_url": "https://pocketful.in/",
+          "access_model": "free",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "API available"
+        },
+        "wisdom_capital": {
+          "name": "Wisdom Capital",
+          "api_name": "Wisdom Capital API",
+          "docs_url": "https://wisdomcapital.in/",
+          "access_model": "on_request",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": true,
+          "notes": "XTS-based"
+        },
+        "rupeezy": {
+          "name": "Rupeezy",
+          "api_name": "Rupeezy API",
+          "docs_url": "https://rupeezy.in/api",
+          "access_model": "free",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "Formerly Astha Trade"
+        },
+        "tradesmart": {
+          "name": "Tradesmart",
+          "api_name": "Tradesmart API",
+          "docs_url": "https://www.tradesmartonline.in/",
+          "access_model": "on_request",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": ""
+        },
+        "jainam": {
+          "name": "Jainam Broking",
+          "api_name": "Jainam XTS",
+          "docs_url": "https://www.jainam.in/",
+          "access_model": "on_request",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": true,
+          "notes": "XTS-based"
+        },
+        "rmoney": {
+          "name": "R Money",
+          "api_name": "R Money API",
+          "docs_url": "https://rmoneyindia.com/",
+          "access_model": "on_request",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": true,
+          "notes": "XTS-based"
+        },
+        "prostocks": {
+          "name": "ProStocks",
+          "api_name": "Star API",
+          "docs_url": "https://www.prostocks.com/prostocks-star-api.html",
+          "access_model": "paid",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": ""
+        },
+        "jm_financial": {
+          "name": "JM Financial",
+          "api_name": "JM Financial API",
+          "docs_url": "https://www.jmfinancialservices.in/",
+          "access_model": "on_request",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": true,
+          "notes": "Symphony-based"
+        },
+        "indiabulls": {
+          "name": "IndiaBulls Securities",
+          "api_name": "IndiaBulls API",
+          "docs_url": "https://www.indiabullssecurities.com/",
+          "access_model": "on_request",
+          "websocket": true,
+          "sdk_languages": [],
+          "xts_based": true,
+          "notes": "XTS-based"
+        },
+        "indmoney": {
+          "name": "IndMoney",
+          "api_name": "INDstocks",
+          "docs_url": "https://www.indmoney.com/",
+          "access_model": "on_request",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": ""
+        }
+      }
+    },
+    "international": {
+      "label": "International Brokers Operating in India",
+      "brokers": {
+        "interactive_brokers": {
+          "name": "Interactive Brokers India",
+          "api_name": "IB API",
+          "docs_url": "https://www.interactivebrokers.co.in/en/trading/ib-api.php",
+          "access_model": "free",
+          "websocket": true,
+          "sdk_languages": ["python", "java", "csharp", "cpp"],
+          "xts_based": false,
+          "notes": "Most comprehensive API globally"
+        }
+      }
+    },
+    "aggregator": {
+      "label": "Aggregator / Multi-Broker Platforms",
+      "brokers": {
+        "openalgo": {
+          "name": "OpenAlgo",
+          "api_name": "OpenAlgo",
+          "docs_url": "https://docs.openalgo.in/",
+          "access_model": "free",
+          "websocket": true,
+          "sdk_languages": ["python"],
+          "xts_based": false,
+          "notes": "Open source, supports 25+ brokers"
+        },
+        "stocks_developer": {
+          "name": "Stocks Developer",
+          "api_name": "AutoTrader Web",
+          "docs_url": "https://stocksdeveloper.in/documentation/api/",
+          "access_model": "paid",
+          "websocket": true,
+          "sdk_languages": ["python", "java"],
+          "xts_based": false,
+          "notes": ""
+        },
+        "algomojo": {
+          "name": "Algomojo",
+          "api_name": "Algomojo API",
+          "docs_url": "https://docs.algomojo.com/",
+          "access_model": "paid",
+          "websocket": false,
+          "sdk_languages": ["python"],
+          "xts_based": false,
+          "notes": ""
+        },
+        "tradetron": {
+          "name": "Tradetron",
+          "api_name": "Tradetron",
+          "docs_url": "https://tradetron.tech/",
+          "access_model": "paid",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "Strategy marketplace"
+        },
+        "quantiply": {
+          "name": "Quantiply",
+          "api_name": "Quantiply",
+          "docs_url": "https://quantiply.tech/documentation/",
+          "access_model": "paid",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": ""
+        }
+      }
+    },
+    "regulators": {
+      "label": "Regulators, Exchanges & Depositories",
+      "brokers": {
+        "sebi": {
+          "name": "SEBI",
+          "api_name": "SEBI Portal",
+          "docs_url": "https://www.sebi.gov.in/",
+          "access_model": "public",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "Regulator - circulars, compliance rules",
+          "extra_urls": {
+            "circulars": "https://www.sebi.gov.in/legal/circulars",
+            "api_setu": "https://directory.apisetu.gov.in/api-collection/sebi",
+            "intermediary_portal": "https://siportal.sebi.gov.in/",
+            "scores": "https://scores.sebi.gov.in/"
+          }
+        },
+        "nse": {
+          "name": "NSE",
+          "api_name": "NSE Data",
+          "docs_url": "https://www.nseindia.com/",
+          "access_model": "licensed",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "No public developer portal, unofficial JSON endpoints exist",
+          "extra_urls": {
+            "data_analytics": "https://www.nseindia.com/products-services/nse-data-analytics"
+          }
+        },
+        "bse": {
+          "name": "BSE",
+          "api_name": "BSE Data",
+          "docs_url": "https://www.bseindia.com/",
+          "access_model": "licensed",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "",
+          "extra_urls": {
+            "market_data": "https://www.bseindia.com/markets/MarketInfo/MarketData.aspx"
+          }
+        },
+        "nsdl": {
+          "name": "NSDL",
+          "api_name": "NSDL Innovation Sandbox",
+          "docs_url": "https://nsdl.co.in/",
+          "access_model": "sandbox",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "Innovation Sandbox provides test data from exchanges/depositories",
+          "extra_urls": {
+            "sandbox": "https://nsdl.co.in/value/innovation-sandbox.php"
+          }
+        },
+        "cdsl": {
+          "name": "CDSL",
+          "api_name": "CDSL/CVL",
+          "docs_url": "https://www.cdslindia.com/",
+          "access_model": "licensed",
+          "websocket": false,
+          "sdk_languages": [],
+          "xts_based": false,
+          "notes": "CVL KRA widely used for KYC/eKYC",
+          "extra_urls": {
+            "cvl_kra": "https://www.cvlkra.com/"
+          }
+        }
+      }
+    }
+  }
+}
